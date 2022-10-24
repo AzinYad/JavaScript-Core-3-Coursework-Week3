@@ -70,3 +70,38 @@ let hogwarts = [
     occupation: "Teacher",
   },
 ];
+
+function whoLivesInGryffindor(hogwarts) {
+  for (let obj in hogwarts) {
+    let { firstName, lastName, house } = hogwarts[obj];
+
+    if (house === "Gryffindor") console.log(`${firstName} ${lastName}`);
+  }
+}
+whoLivesInGryffindor(hogwarts);
+
+// function whoLivesInGryffindor(arr) {
+//   arr.forEach(({ firstName, lastName, house }) => {
+//     if (house === "Gryffindor") console.log(`${firstName} ${lastName}`);
+//   });
+// }
+// whoLivesInGryffindor(hogwarts);
+
+function teacherOwnsPet(arr) {
+  for (let obj in arr) {
+    let { firstName, lastName, pet, occupation } = arr[obj];
+    if (pet !== null && occupation === "Teacher")
+      console.log(`${firstName} ${lastName}`);
+  }
+}
+
+teacherOwnsPet(hogwarts);
+
+// function petTeacher(arr) {
+//   arr.forEach(({ firstName, lastName, pet, occupation }) => {
+//     if (pet !== null && occupation === "Teacher")
+//       console.log(`${firstName} ${lastName}`);
+//   });
+// }
+
+// petTeacher(hogwarts);

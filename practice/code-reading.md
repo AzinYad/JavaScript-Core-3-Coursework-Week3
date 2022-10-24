@@ -15,6 +15,7 @@ Take a look at the following code:
 ```
 
 Explain why line 4 and line 6 output different numbers.
+line 4 refers to function scop variable which is X=2 , but line 6 refers to the global variable on line.
 
 ## Question 2
 
@@ -34,6 +35,7 @@ console.log(y)
 ```
 
 What will be the output of this code. Explain your answer in 50 words or less.
+it will console log 10 for calling f1 , and undefined for y because , it hasn't defined globally .
 
 ## Question 3
 
@@ -62,3 +64,4 @@ console.log(y);
 ```
 
 What will be the output of this code. Explain your answer in 50 words or less.
+output will be "9 and {x: 10 }" . x is a const variables so can't be changed, however y is an object and its value can be changed within the object
